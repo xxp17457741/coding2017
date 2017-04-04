@@ -43,8 +43,10 @@ public class StackUtil {
         Object[] ret = new Object[len];
         int index = 0;
         
-        while (0 < len--)
-            temp.push(ret[index++] = s.pop());
+        while (0 < len--) {
+            temp.push(ret[index] = s.pop());
+            index++;
+        }
         while (!temp.isEmpty())
             s.push(temp.pop());
         return ret;

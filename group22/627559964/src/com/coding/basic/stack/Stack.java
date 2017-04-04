@@ -1,18 +1,20 @@
-package com.coding.basic;
+package com.coding.basic.stack;
+
+import com.coding.basic.array.ArrayList;
 
 /**
- * ×Ô¶¨Òåstack
+ * è‡ªå®šä¹‰stack
  * 
  * @author xiongrui233
  *
  */
 public class Stack {
 	
-	//ÔªËØ¼¯ºÏ
+	//å…ƒç´ é›†åˆ
 	private ArrayList elementData = new ArrayList();
 
 	/**
-	 * ÏòÕ»¶¥Ñ¹ÈëÔªËØ
+	 * å‘æ ˆé¡¶å‹å…¥å…ƒç´ 
 	 * @param o
 	 */
 	public void push(Object o) {
@@ -20,7 +22,7 @@ public class Stack {
 	}
 
 	/**
-	 * »ñµÃÕ»¶¥ÔªËØ,²¢ÒÆ³ıÕ»Àï¸ÃÔªËØ
+	 * è·å¾—æ ˆé¡¶å…ƒç´ ,å¹¶ç§»é™¤æ ˆé‡Œè¯¥å…ƒç´ 
 	 * @return obj
 	 */
 	public Object pop() {
@@ -30,7 +32,7 @@ public class Stack {
 	}
 
 	/**
-	 * »ñµÃÕ»¶¥ÔªËØ,²»ÒÆ³ıÕ»Àï¸ÃÔªËØ
+	 * è·å¾—æ ˆé¡¶å…ƒç´ ,ä¸ç§»é™¤æ ˆé‡Œè¯¥å…ƒç´ 
 	 * @return obj
 	 */
 	public Object peek() {
@@ -38,7 +40,7 @@ public class Stack {
 	}
 
 	/**
-	 * ÅĞ¶Ï¸ÃÕ»ÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­è¯¥æ ˆæ˜¯å¦ä¸ºç©º
 	 * @return true/false
 	 */
 	public boolean isEmpty() {
@@ -49,7 +51,7 @@ public class Stack {
 	}
 
 	/**
-	 * »ñµÃÕ»µÄ´óĞ¡
+	 * è·å¾—æ ˆçš„å¤§å°
 	 * @return size
 	 */
 	public int size() {

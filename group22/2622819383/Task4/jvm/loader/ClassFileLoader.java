@@ -16,9 +16,10 @@ public class ClassFileLoader {
     public byte[] readBinaryCode(String className) {
         for (String path : clzPaths) {
             File f = new File(path + className.replace('.', '/') + ".class");
-            if (f.exists() && f.isFile()) 
+            if (f.exists() && f.isFile()) {
                 System.out.println("f.length(): " + f.length());
-                return readBytes(f);            
+                return readBytes(f);       
+            }
         }
         return null;				
     }

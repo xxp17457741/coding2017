@@ -1,5 +1,5 @@
 package thirdwork.api;
 
-public class DownloadListener {
-
+public interface DownloadListener {
+	public void notifyFinished();
 }

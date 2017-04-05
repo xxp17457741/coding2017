@@ -1,5 +1,7 @@
 package thirdwork.api;
 
-public class ConnectionException {
 
-}
+	public class ConnectionException extends Exception {
+
+	}
+

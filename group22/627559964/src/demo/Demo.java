@@ -3,10 +3,10 @@ package demo;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-import com.coding.basic.ArrayList;
 import com.coding.basic.Iterator;
-import com.coding.basic.LinkedList;
 import com.coding.basic.List;
+import com.coding.basic.array.ArrayList;
+import com.coding.basic.linklist.LinkedList;
 
 public class Demo {
 	public static void main(String[] args) {

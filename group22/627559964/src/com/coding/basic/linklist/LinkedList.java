@@ -1,4 +1,7 @@
-package com.coding.basic;
+package com.coding.basic.linklist;
+
+import com.coding.basic.Iterator;
+import com.coding.basic.List;
 
 /**
  * 自定义LinkList

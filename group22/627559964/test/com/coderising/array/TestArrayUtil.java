@@ -7,6 +7,7 @@ import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.coding.basic.array.ArrayUtil;
 import com.sun.scenario.effect.Merge;
 
 public class TestArrayUtil {

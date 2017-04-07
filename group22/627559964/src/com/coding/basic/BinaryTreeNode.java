@@ -1,18 +1,18 @@
 package com.coding.basic;
 
 /**
- * ×Ô¶¨Òå¶ş²æÊ÷
+ * è‡ªå®šä¹‰äºŒå‰æ ‘
  * 
  * @author xiongrui233
  *
  */
 public class BinaryTreeNode {
 
-	//½ÚµãÖµ
+	//èŠ‚ç‚¹å€¼
 	private Object data;
-	//×ó×ÓÊ÷
+	//å·¦å­æ ‘
 	private BinaryTreeNode left;
-	//ÓÒ×ÓÊ÷
+	//å³å­æ ‘
 	private BinaryTreeNode right;
 
 	public Object getData() {
@@ -40,7 +40,7 @@ public class BinaryTreeNode {
 	}
 
 	/**
-	 * ²åÈëÔªËØ
+	 * æ’å…¥å…ƒç´ 
 	 * @param o
 	 * @return BinaryTreeNode
 	 */

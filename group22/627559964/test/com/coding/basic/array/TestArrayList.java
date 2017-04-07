@@ -1,10 +1,14 @@
-package com.coding.basic;
+package com.coding.basic.array;
 
 import java.util.Arrays;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.coding.basic.Iterator;
+import com.coding.basic.List;
+import com.coding.basic.array.ArrayList;
 
 public class TestArrayList {
 

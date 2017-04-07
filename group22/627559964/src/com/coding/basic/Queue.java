@@ -1,7 +1,9 @@
 package com.coding.basic;
 
+import com.coding.basic.linklist.LinkedList;
+
 /**
- * ×Ô¶¨Òå¶ÓÁÐ
+ * è‡ªå®šä¹‰é˜Ÿåˆ—
  * 
  * @author xiongrui233
  *

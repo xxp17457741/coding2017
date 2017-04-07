@@ -1,23 +1,26 @@
-package com.coding.basic;
+package com.coding.basic.array;
 
 import java.util.Arrays;
 
+import com.coding.basic.Iterator;
+import com.coding.basic.List;
+
 /**
- * ×Ô¶¨ÒåArrayList
+ * è‡ªå®šä¹‰ArrayList
  * 
  * @author xiongrui233
  *
  */
 public class ArrayList implements List {
 
-	// list³¤¶È
+	// listé•¿åº¦
 	private int size = 0;
 
-	// listµÄÔªËØ¼¯ºÏ
+	// listçš„å…ƒç´ é›†åˆ
 	private Object[] elementData = new Object[10];
 
 	/**
-	 * ºÏ²¢Êı×é
+	 * åˆå¹¶æ•°ç»„
 	 * 
 	 * @param arrays1
 	 * @param arrays2
@@ -31,7 +34,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ·Ö¸îÊı×é
+	 * åˆ†å‰²æ•°ç»„
 	 * 
 	 * @param arrays
 	 * @param from
@@ -47,8 +50,8 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ¶¯Ì¬Ôö³¤list³¤¶È
-	 * ²ßÂÔÎª:newSize = oldSize * 1.5
+	 * åŠ¨æ€å¢é•¿listé•¿åº¦
+	 * ç­–ç•¥ä¸º:newSize = oldSize * 1.5
 	 * 
 	 * @param oldSize
 	 */
@@ -57,7 +60,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ¼ì²éÔÚ²åÈëĞÂÔªËØÊ±,list³¤¶ÈÊÇ·ñ×ã¹»
+	 * æ£€æŸ¥åœ¨æ’å…¥æ–°å…ƒç´ æ—¶,listé•¿åº¦æ˜¯å¦è¶³å¤Ÿ
 	 * 
 	 * @param newSize
 	 */
@@ -69,7 +72,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ĞÂÔöÔªËØ
+	 * æ–°å¢å…ƒç´ 
 	 * 
 	 * @param Object
 	 */
@@ -79,7 +82,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ĞÂÔöÔªËØ
+	 * æ–°å¢å…ƒç´ 
 	 * 
 	 * @param index
 	 * @param Object
@@ -96,7 +99,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * »ñµÃ±àºÅÎªindexµÄÔªËØ
+	 * è·å¾—ç¼–å·ä¸ºindexçš„å…ƒç´ 
 	 * 
 	 * @param int
 	 * @return Object
@@ -106,7 +109,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * É¾³ı±àºÅÎªindexµÄÔªËØ
+	 * åˆ é™¤ç¼–å·ä¸ºindexçš„å…ƒç´ 
 	 * 
 	 * @param int
 	 * @return Object
@@ -122,7 +125,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ·µ»Ølist³¤¶È
+	 * è¿”å›listé•¿åº¦
 	 * 
 	 * @return int
 	 */
@@ -131,7 +134,7 @@ public class ArrayList implements List {
 	}
 
 	/**
-	 * ÖØĞ´µü´úÆ÷
+	 * é‡å†™è¿­ä»£å™¨
 	 *
 	 * @return IteratorImpl
 	 */

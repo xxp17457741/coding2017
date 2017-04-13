@@ -1,4 +1,4 @@
-package com.coding.basice.linklist;
+package com.coding.basic.linklist;
 
 import  org.junit.Assert;
 

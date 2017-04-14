@@ -1,10 +1,8 @@
-package test;
+package com.coding.basic;
 
 import org.junit.Test;
 
-import basic.BinaryTreeNode;
-import basic.Iterator;
-import basic.LinkedList;
+import com.coding.basic.linklist.LinkedList;
 
 public class BinaryTreeNodeTest {
 	

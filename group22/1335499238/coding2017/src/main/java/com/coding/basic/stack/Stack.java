@@ -1,4 +1,6 @@
-package basic;
+package com.coding.basic.stack;
+
+import com.coding.basic.array.ArrayList;
 
 public class Stack {
 
@@ -12,7 +14,7 @@ public class Stack {
 	}
 	
 	public Object pop(){
-		return elementData.remove(size-1);
+		return elementData.remove(--size);
 	}
 	
 	public Object peek(){
@@ -26,4 +28,10 @@ public class Stack {
 	public int size(){
 		return size;
 	}
+
+	@Override
+	public String toString() {
+		return elementData.toString();
+	}
+	
 }

@@ -1,11 +1,10 @@
-package test;
+package com.coding.basic.array;
 
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import basic.ArrayList;
-import basic.Iterator;
+import com.coding.basic.Iterator;
 
 public class ArrayListTest {
 	

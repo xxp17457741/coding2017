@@ -3,11 +3,12 @@ package com.coderising.jvm.loader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.coderising.jvm.clz.ClassFile;
 
 
 
@@ -16,12 +17,22 @@ public class ClassFileLoader {
 private List<String> clzPaths = new ArrayList<String>();
 	
 	public byte[] readBinaryCode(String className) {
-		String filePath = new StringBuilder().append(getClassPath()).append("\\").append(className.replace(".", "\\")).append(".class").toString();
-		File file = new File(filePath);
+		for(String path : this.clzPaths){
+			String filePath = new StringBuilder().append(path).append("\\").append(className.replace(".", File.separator)).append(".class").toString();
+			byte[] loadFile = loadFile(filePath);
+			if(loadFile != null){
+				return loadFile;
+			}
+		}
+		return null;
+	}
+	
+	private byte[] loadFile(String path){
+		File file = new File(path);
 		ByteArrayOutputStream bs = new ByteArrayOutputStream();
 		try {
 			if(!file.exists()){
-				throw new FileNotFoundException();
+				return null;
 			}
 			byte[] buffer = new byte[1024];
 			InputStream is = new FileInputStream(file);
@@ -31,13 +42,13 @@ private List<String> clzPaths = new ArrayList<String>();
 			}
 			is.close();
 			bs.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			return bs.toByteArray();
 		} catch (IOException e) {
 			e.printStackTrace();
+			return null;
 		}
-		return bs.toByteArray();	
 	}
+	
 	
 	public void addClassPath(String path) {
 		clzPaths.add(path);
@@ -53,5 +64,11 @@ private List<String> clzPaths = new ArrayList<String>();
 			}
 		}
 		return stringBuilder.toString();
+	}
+	
+	public ClassFile loadClass(String className) {
+		byte[] codes = this.readBinaryCode(className);
+		ClassFileParser parser = new ClassFileParser();
+		return parser.parse(codes);
 	}
 }

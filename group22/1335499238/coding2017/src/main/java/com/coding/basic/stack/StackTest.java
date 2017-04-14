@@ -1,9 +1,7 @@
-package test;
+package com.coding.basic.stack;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import basic.Stack;
 
 public class StackTest {
 	

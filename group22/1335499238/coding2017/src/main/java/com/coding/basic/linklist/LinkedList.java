@@ -1,5 +1,7 @@
-package basic;
+package com.coding.basic.linklist;
 
+import com.coding.basic.Iterator;
+import com.coding.basic.List;
 
 public class LinkedList implements List{
 

@@ -1,4 +1,6 @@
-package basic;
+package com.coding.basic;
+
+import com.coding.basic.linklist.LinkedList;
 
 public class BinaryTreeNode <T extends Comparable<T>>{
 	

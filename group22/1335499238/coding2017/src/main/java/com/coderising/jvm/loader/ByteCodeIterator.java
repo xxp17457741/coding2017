@@ -42,4 +42,8 @@ public class ByteCodeIterator {
 		index += len;
 		return bytes;
 	}
+	
+	public void back(int n){
+		index -= n;
+	}
 }

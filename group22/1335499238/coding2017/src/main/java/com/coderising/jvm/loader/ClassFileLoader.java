@@ -70,5 +70,6 @@ private List<String> clzPaths = new ArrayList<String>();
 		byte[] codes = this.readBinaryCode(className);
 		ClassFileParser parser = new ClassFileParser();
 		return parser.parse(codes);
+		
 	}
 }
